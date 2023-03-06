@@ -1,8 +1,6 @@
 
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import { useEffect } from 'react'
 
 const inter = Inter({ weight: '400',subsets: ['latin'] })
@@ -107,7 +105,7 @@ export const getStaticProps = async () => {
       skjerm9: skjerm9Innhold,
       skjerm10: skjerm10Innhold,
       skjerm11: skjerm11Innhold,
-      skjerm12: skjerm11Innhold,
+      skjerm12: skjerm12Innhold,
       skjerm13: skjerm13Innhold,
       skjerm14: skjerm14Innhold,
       skjerm15: skjerm15Innhold,
