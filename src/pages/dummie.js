@@ -118,7 +118,9 @@ export const getStaticProps = async () => {
 export default function Home( skjerm1 ) {
   useEffect(() => {
     const interval = setInterval(() => {
-      window.location.reload(false);
+      if (navigator.onLine) {
+        window.location.reload(false);
+      }
     }, 10000);
     return () => clearInterval(interval);
   }, []);
