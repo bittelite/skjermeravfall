@@ -115,7 +115,6 @@ export const getStaticProps = async () => {
   }
 }
 
-
 export default function Home( skjerm1 ) {
   useEffect(() => {
     const interval = setInterval(() => {
@@ -139,7 +138,7 @@ export default function Home( skjerm1 ) {
         {Object.values(skjerm1).map(post => (
           <div className='merke grid grid-cols-3 gap-0 items-center' key={post.id}>
             <img src={post.ikon} width={128} height={128} className='col-span-1'/>
-            <div className='text-3xl text-left col-span-2 px-5'>{post.tekst}</div>
+            <div className='text-3xl text-left col-span-2 px-4'>{post.tekst}</div>
           </div>
         ))}
       </div>
