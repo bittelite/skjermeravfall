@@ -115,6 +115,7 @@ export const getStaticProps = async () => {
   }
 }
 
+
 export default function Home( skjerm1 ) {
   useEffect(() => {
     const interval = setInterval(() => {
