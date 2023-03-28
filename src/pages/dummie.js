@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import { useEffect } from 'react'
 
-const inter = Inter({ weight: '400',subsets: ['latin'] })
+const inter = Inter({ weight: '800',subsets: ['latin'] })
 
 export const getStaticProps = async () => {
   const avfallsTyperWP = await fetch('https://reklameservice.no/wp-json/wp/v2/avfallstyper?per_page=100&acf_format=standard');
@@ -134,7 +134,7 @@ export default function Home( skjerm1 ) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={inter.className}>
-      <div className='grid grid-rows-4 grid-cols-4 grid-flow-row gap-0'>
+      <div className='grid grid-rows-4 grid-cols-4 grid-flow-row gap-0 bg-black text-white'>
         {Object.values(skjerm1).map(post => (
           <div className='merke grid grid-cols-3 gap-0 items-center' key={post.id}>
             <img src={post.ikon} width={128} height={128} className='col-span-1'/>
