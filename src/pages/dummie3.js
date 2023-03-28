@@ -137,7 +137,7 @@ export default function Home( skjerm1 ) {
       <div className='grid grid-rows-4 grid-cols-4 grid-flow-row gap-0'>
         {Object.values(skjerm1).map(post => (
           <div className='merke grid grid-cols gap-0 items-center' key={post.id}>
-            <div className='text-4xl text-left px-4 uppercase'>{post.tekst}</div>
+            <div className='text-4xl text-center px-4 uppercase'>{post.tekst}</div>
           </div>
         ))}
       </div>
